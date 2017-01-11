@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="app/app.css">
+  <title>Simple Controller Testing</title>
+  <script src="app/angular.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/lift.controller.js"></script>
+</head>
+<body ng-app="app">
+  <div ng-controller="liftController as ctrl">
+    <h1>Super Lift Control App</h1>
+    <a ng-click="ctrl.goUp()">Up</a>
+    {{ctrl.floor}}
+    <a ng-click="ctrl.goDown()">Down</a>
+  </div>
+</body>
+</html>
